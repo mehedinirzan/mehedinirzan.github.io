@@ -8,24 +8,51 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <title>Page not found — Mehedi Hasan Nirzan</title>
+<script>
+  if (location.pathname.endsWith('/index.html')) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname.replace(/index\.html$/, '')
+    );
+  }
+</script>
+<script>
+  if (location.pathname.endsWith('/index.html')) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname.replace(/index\.html$/, '')
+    );
+  }
+</script>
+<script>
+  if (location.pathname.endsWith('/index.html')) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname.replace(/index\.html$/, '')
+    );
+  }
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="header-row">
-      <a class="brand" href="index.html">Mehedi Hasan Nirzan</a>
+      <a class="brand" href="/">Mehedi Hasan Nirzan</a>
       <nav class="site-nav" aria-label="Portfolio sections">
-        <a href="index.html">About</a>
-        <a href="research/index.html">Research</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="experience/index.html">Experience</a>
-        <a href="education/index.html">Education</a>
-        <a href="skills/index.html">Skills</a>
-        <a href="achievements/index.html">Achievements</a>
-        <a href="contact/index.html">Contact</a>
+        <a href="/">About</a>
+        <a href="/research/">Research</a>
+        <a href="/projects/">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/education/">Education</a>
+        <a href="/skills/">Skills</a>
+        <a href="/achievements/">Achievements</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
-  <main class="not-found" id="main-content"><div><p>Error 404</p><h1>This page is outside the model.</h1><a href="index.html">Return home →</a></div></main>
+  <main class="not-found" id="main-content"><div><p>Error 404</p><h1>This page is outside the model.</h1><a href="/">Return home →</a></div></main>
 </body>
 </html>

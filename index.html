@@ -8,21 +8,39 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <title>About — Mehedi Hasan Nirzan</title>
+<script>
+  if (location.pathname.endsWith('/index.html')) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname.replace(/index\.html$/, '')
+    );
+  }
+</script>
+<script>
+  if (location.pathname.endsWith('/index.html')) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname.replace(/index\.html$/, '')
+    );
+  }
+</script>
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="header-row">
-      <a class="brand" href="index.html">Mehedi Hasan Nirzan</a>
+      <a class="brand" href="/">Mehedi Hasan Nirzan</a>
       <nav class="site-nav" aria-label="Portfolio sections">
-        <a href="index.html" aria-current="page">About</a>
-        <a href="research/index.html">Research</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="experience/index.html">Experience</a>
-        <a href="education/index.html">Education</a>
-        <a href="skills/index.html">Skills</a>
-        <a href="achievements/index.html">Achievements</a>
-        <a href="contact/index.html">Contact</a>
+        <a href="/" aria-current="page">About</a>
+        <a href="/research/">Research</a>
+        <a href="/projects/">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/education/">Education</a>
+        <a href="/skills/">Skills</a>
+        <a href="/achievements/">Achievements</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
@@ -32,7 +50,7 @@
         <p class="kicker">Biomedical engineering — cardiovascular mechanics</p>
         <h1>Mechanics,<span>made personal.</span></h1>
         <p class="introduction"><strong>I’m Mehedi Hasan Nirzan.</strong> I investigate cardiovascular mechanics through patient-specific CFD, one-way fluid–structure interaction, image-derived models, and emerging digital-twin methods.</p>
-        <div class="actions"><a class="primary-action" href="projects/index.html">View selected work</a><a class="text-action" href="assets/Mehedi_Hasan_Nirzan_CV.pdf" download>Download CV</a></div>
+        <div class="actions"><a class="primary-action" href="/projects/">View selected work</a><a class="text-action" href="assets/Mehedi_Hasan_Nirzan_CV.pdf" download>Download CV</a></div>
         <ul class="focus-list" aria-label="Research focus"><li>Patient-specific CFD</li><li>One-way FSI</li><li>CCTA models</li><li>Digital twins</li></ul>
       </div>
       <figure class="portrait-wrap"><div class="portrait"><img src="assets/mehedi-hasan-nirzan.webp" alt="Portrait of Mehedi Hasan Nirzan" /></div><figcaption class="portrait-meta">Dhaka, Bangladesh<br />BUET · 2026</figcaption></figure>
