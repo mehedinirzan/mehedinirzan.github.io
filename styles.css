@@ -360,7 +360,7 @@ img { display: block; max-width: 100%; }
    ========================================= */
 
 .portrait-visual {
-  --portrait-size: clamp(320px, 28vw, 430px);
+  --portrait-size: clamp(280px, 24vw, 400px);
 
   position: relative;
   width: var(--portrait-size);
