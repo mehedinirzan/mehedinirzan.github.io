@@ -334,31 +334,23 @@ img { display: block; max-width: 100%; }
     text-shadow 0.25s ease;
 }
 
+.introduction a.academic-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
 .introduction a.academic-link::after {
-  content: "↗";
-  display: inline-block;
-  margin-left: 0.18em;
-  color: var(--orange-hover, #cf7443);
-  opacity: 0;
-  transform: translate(-4px, 4px);
-  transition:
-    opacity 0.25s ease,
-    transform 0.3s ease;
+  content: none;
 }
 
 .introduction a.academic-link:hover,
 .introduction a.academic-link:focus-visible {
   color: var(--orange-hover, #cf7443);
-  background-size: 100% 2px;
-  text-shadow: 0 0 14px rgba(191, 103, 56, 0.28);
-}
-
-.introduction a.academic-link:hover::after,
-.introduction a.academic-link:focus-visible::after {
-  opacity: 1;
-  transform: translate(0, -1px);
-}
-
-.introduction a.academic-link::after {
-  content: none;
+  background: none;
+  text-shadow:
+    0 0 8px rgba(207, 116, 67, 0.45),
+    0 0 18px rgba(207, 116, 67, 0.22);
 }
