@@ -358,3 +358,7 @@ img { display: block; max-width: 100%; }
   opacity: 1;
   transform: translate(0, -1px);
 }
+
+.introduction a.academic-link::after {
+  content: none;
+}
