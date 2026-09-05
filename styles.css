@@ -583,3 +583,32 @@ img { display: block; max-width: 100%; }
     margin-top: 25px;
   }
 }
+
+/* Keep the portrait fixed on the right side */
+@media (min-width: 901px) {
+  .hero {
+    position: relative;
+  }
+
+  .portrait-wrap {
+    position: absolute !important;
+    top: 48% !important;
+    right: 0 !important;
+
+    width: 400px !important;
+    margin: 0 !important;
+
+    transform: translateY(-50%) !important;
+    z-index: 1;
+  }
+}
+
+/* Restore normal positioning on smaller screens */
+@media (max-width: 900px) {
+  .portrait-wrap {
+    position: static !important;
+    width: 100% !important;
+    margin: 25px auto 0 !important;
+    transform: none !important;
+  }
+}
