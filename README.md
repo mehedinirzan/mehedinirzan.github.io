@@ -4,7 +4,7 @@ This folder is ready for GitHub Pages. It uses plain HTML and CSS, so it does no
 
 ## Pages included
 
-- Home: `index.html`
+- About: `index.html`
 - Research: `research/index.html`
 - Projects: `projects/index.html`
 - Experience: `experience/index.html`
