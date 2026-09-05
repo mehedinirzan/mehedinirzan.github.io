@@ -377,7 +377,7 @@ img { display: block; max-width: 100%; }
 .profile-round-frame {
   position: relative;
 
-  width: clamp(340px, 26vw, 400px);
+  width: clamp(440px, 36vw, 600px);
   aspect-ratio: 1;
 
   display: grid;
@@ -422,7 +422,7 @@ img { display: block; max-width: 100%; }
   border-radius: 0 !important;
   clip-path: none !important;
 
-  transform: scale(1.12) translateY(2%);
+  transform: scale(2) translateY(5%);
   transform-origin: center bottom;
 }
 
