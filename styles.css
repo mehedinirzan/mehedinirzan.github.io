@@ -354,3 +354,24 @@ img { display: block; max-width: 100%; }
     0 0 8px rgba(207, 116, 67, 0.45),
     0 0 18px rgba(207, 116, 67, 0.22);
 }
+/* Unframed portfolio portrait */
+*:has(> img[src$="nirzan-portrait.png"]) {
+  width: clamp(280px, 24vw, 350px) !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  border: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+img[src$="nirzan-portrait.png"] {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border: none !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.3));
+}
