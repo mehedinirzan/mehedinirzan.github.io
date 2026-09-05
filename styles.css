@@ -419,7 +419,7 @@ img.portrait-image {
   border-radius: 0 !important;
   clip-path: none !important;
 
-  transform: scale(1.02);
+  transform: scale(1.2);
   transform-origin: center center;
 }
 
