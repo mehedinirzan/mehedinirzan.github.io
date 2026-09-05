@@ -377,7 +377,7 @@ img { display: block; max-width: 100%; }
 .profile-round-frame {
   position: relative;
 
-  width: clamp(300px, 22vw, 370px);
+  width: clamp(340px, 26vw, 400px);
   aspect-ratio: 1;
 
   display: grid;
