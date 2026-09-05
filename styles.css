@@ -465,3 +465,60 @@ img { display: block; max-width: 100%; }
     width: min(76vw, 300px);
   }
 }
+
+/* =========================================
+   Full-width hero bottom row
+   ========================================= */
+
+.hero-bottom {
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(30px, 4vw, 64px);
+
+  width: 100%;
+  margin-top: -4px;
+}
+
+.hero-bottom .actions {
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.hero-bottom .focus-list {
+  flex: 1 1 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+
+  gap: 9px clamp(16px, 2vw, 26px);
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent research terms from breaking internally */
+.hero-bottom .focus-list li {
+  flex: none;
+  white-space: nowrap;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+  .hero-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 10px;
+  }
+
+  .hero-bottom .focus-list {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
