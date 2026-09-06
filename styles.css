@@ -1246,3 +1246,29 @@ img { display: block; max-width: 100%; }
 .achievements-head .achievement-item:last-child {
   border-bottom: none;
 }
+
+/* Experience links with animated underline */
+.experience-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.experience-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  background: var(--orange-soft);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms ease;
+}
+
+.experience-link:hover::after,
+.experience-link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
