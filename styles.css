@@ -1037,3 +1037,9 @@ img { display: block; max-width: 100%; }
     gap: 2px;
   }
 }
+
+/* Remove the line below the final internship entry */
+.experience-entry:last-child {
+  border-bottom: none;
+}
+
