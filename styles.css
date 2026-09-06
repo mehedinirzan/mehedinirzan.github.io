@@ -1090,3 +1090,8 @@ img { display: block; max-width: 100%; }
 .introduction a.academic-link:focus-visible {
   text-decoration-color: var(--orange-hover);
 }
+
+/* Make thesis type and date orange */
+.featured-project .project-meta p {
+  color: var(--orange-soft);
+}
