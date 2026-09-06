@@ -796,8 +796,8 @@ img { display: block; max-width: 100%; }
   width: 100%;
   display: grid;
   grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.65fr);
-  column-gap: clamp(5rem, 7vw, 7.5rem);
-  row-gap: 3rem;
+  column-gap: clamp(8rem, 11vw, 12.5rem);
+  row-gap: 7rem;
   align-items: start;
 }
 
