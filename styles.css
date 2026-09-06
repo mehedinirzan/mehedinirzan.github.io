@@ -816,8 +816,19 @@ img { display: block; max-width: 100%; }
   filter: none !important;
 }
 
-/* Align thesis date closer to the methods divider */
+
+/* Give the thesis description more horizontal space */
 @media (min-width: 1101px) {
+  .featured-project {
+    gap: 10px;
+  }
+
+  .project-description {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Keep the date close to, but not touching, the divider */
   .featured-project-main > .project-meta {
     width: calc(100% + 5.5px);
   }
