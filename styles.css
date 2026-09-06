@@ -798,3 +798,20 @@ img { display: block; max-width: 100%; }
     margin-left: -100px;
   }
 }
+
+/* Move the Additional Works divider upward */
+.projects-hero {
+  padding-bottom: 2.5rem;
+}
+
+/* Additional Works heading */
+#other-projects-heading {
+  color: var(--orange-hover);
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-shadow:
+    0 0 8px rgba(207, 116, 67, 0.45),
+    0 0 18px rgba(207, 116, 67, 0.2);
+}
