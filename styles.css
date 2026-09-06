@@ -1095,3 +1095,29 @@ img { display: block; max-width: 100%; }
 .featured-project .project-meta p {
   color: var(--orange-soft);
 }
+
+/* Education dates: neutral rather than orange */
+.education-list .education-date {
+  color: var(--quiet) !important;
+}
+
+/* Institution names: permanently orange */
+.education-entry h2 .institution-link {
+  color: var(--orange-soft);
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease,
+    text-shadow 180ms ease;
+}
+
+/* Animated underline and subtle glow on hover */
+.education-entry h2 .institution-link:hover,
+.education-entry h2 .institution-link:focus-visible {
+  color: var(--orange-hover);
+  text-decoration-color: var(--orange-hover);
+  text-shadow: 0 0 12px rgba(207, 116, 67, 0.25);
+}
