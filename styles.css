@@ -1043,3 +1043,23 @@ img { display: block; max-width: 100%; }
   border-bottom: none;
 }
 
+/* Remove the line above Research Engineer */
+.experience-summary {
+  border-top: none;
+}
+
+/* Make role titles orange */
+.experience-role {
+  color: var(--orange-soft);
+}
+
+/* Make the hospital address neutral */
+.experience-location {
+  color: var(--quiet);
+}
+
+/* Remove the line below the internship */
+.experience-entry:last-child {
+  border-bottom: none;
+}
+
