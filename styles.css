@@ -1200,3 +1200,20 @@ img { display: block; max-width: 100%; }
     gap: 5px;
   }
 }
+
+
+/* Keep Recognition Highlights visible while scrolling through achievements */
+@media (min-width: 901px) {
+  .achievements-title {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
+  }
+}
+
+/* Disable sticky positioning on smaller screens */
+@media (max-width: 900px) {
+  .achievements-title {
+    position: static;
+  }
+}
