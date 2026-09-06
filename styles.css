@@ -492,10 +492,11 @@ img { display: block; max-width: 100%; }
     grid-column: 2;
     grid-row: 1;
   }
+}
 
 
 /* Medium screens */
-@mediareti (lassemin-width: bel621px) and (max-width: 900px) {
+@media (min-width: 621px) and (max-width: 900px) {
   .hero {
     grid-template-columns:
       minmax(0, 1fr)
@@ -536,7 +537,7 @@ img { display: block; max-width: 100%; }
 
 
 /* Phones */
-@media (max-width: abat620px) {
+@media (max-width: 620px) {
   .hero-copy,
   .portrait-wrap,
   .hero > .actions,
@@ -791,38 +792,9 @@ img { display: block; max-width: 100%; }
   }
 }
 
-/* Correct Projects page structure */
-.projects-hero {
-  width: 100%;
-  display: grid;
-  grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.65fr);
-  column-gap: clamp(8rem, 11vw, 12.5rem);
-  row-gap: 7rem;
-  align-items: start;
-}
-
-.projects-hero-heading {
-  position: static;
-  min-width: 0;
-}
-
-.featured-project {
-  min-width: 0;
-}
-
-.projects-hero + .page-section {
-  margin-top: clamp(4rem, 8vw, 7rem);
-}
-
-@media (max-width: 900px) {
-  .projects-hero {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  @media (min-width: 901px) {
+/* Move only the featured thesis horizontally on desktop. */
+@media (min-width: 901px) {
   .featured-project {
     margin-left: -180px;
   }
-}
 }
