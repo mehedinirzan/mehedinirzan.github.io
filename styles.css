@@ -608,3 +608,185 @@ img { display: block; max-width: 100%; }
   flex: none;
   white-space: nowrap;
 }
+
+  /* ==================================================
+   PROJECTS PAGE — INTRODUCTION AND FEATURED THESIS
+   ================================================== */
+
+.projects-hero {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.75fr) minmax(620px, 1.65fr);
+  gap: clamp(4rem, 8vw, 9rem);
+  align-items: start;
+  padding: clamp(4rem, 8vh, 7rem) 0;
+  border-bottom: 1px solid rgba(151, 190, 205, 0.2);
+}
+
+.projects-hero-heading {
+  position: sticky;
+  top: 7rem;
+}
+
+.projects-hero-heading .section-label {
+  margin: 0 0 1.5rem;
+  color: #d8733f;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.projects-hero-heading h1 {
+  max-width: 520px;
+  margin: 0;
+  color: #f1f4f3;
+  font-size: clamp(3.2rem, 5vw, 5.4rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.projects-hero-heading h1 span {
+  display: block;
+  margin-top: 0.2em;
+  color: #d8733f;
+}
+
+/* Featured thesis */
+
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 185px;
+  gap: clamp(2rem, 4vw, 4rem);
+  min-width: 0;
+  padding-top: 0.25rem;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.15rem;
+  color: #d8733f;
+  font-size: 0.86rem;
+}
+
+.project-meta p {
+  margin: 0;
+}
+
+.featured-project h2 {
+  max-width: 760px;
+  margin: 0;
+  color: #f1f4f3;
+  font-size: clamp(1.8rem, 2.6vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.project-description {
+  max-width: 780px;
+  margin: 1.35rem 0 0;
+  color: #94bfd0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.3rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  position: relative;
+  padding-left: 0.85rem;
+  color: #b8d0d8;
+  font-size: 0.88rem;
+}
+
+.project-tags li::before {
+  position: absolute;
+  left: 0;
+  color: #d8733f;
+  content: "•";
+}
+
+.project-supervisor {
+  margin: 1.25rem 0 0;
+  color: #688b9a;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Right-side method list */
+
+.featured-methods {
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(151, 190, 205, 0.2);
+}
+
+.featured-methods div + div {
+  margin-top: 1.65rem;
+}
+
+.featured-methods dt {
+  margin-bottom: 0.45rem;
+  color: #d8733f;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.featured-methods dd {
+  margin: 0;
+  color: #94bfd0;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 1100px) {
+  .projects-hero {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .projects-hero-heading {
+    position: static;
+  }
+
+  .projects-hero-heading h1 {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 720px) {
+  .projects-hero {
+    padding: 3rem 0;
+  }
+
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-methods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0 0;
+    border-top: 1px solid rgba(151, 190, 205, 0.2);
+    border-left: 0;
+  }
+
+  .featured-methods div + div {
+    margin-top: 0;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
