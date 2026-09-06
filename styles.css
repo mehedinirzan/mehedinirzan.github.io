@@ -822,7 +822,7 @@ img { display: block; max-width: 100%; }
 
   @media (min-width: 901px) {
   .featured-project {
-    margin-left: -118px;
+    margin-left: -180px;
   }
 }
 }
