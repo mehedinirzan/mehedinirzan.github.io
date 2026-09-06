@@ -816,8 +816,9 @@ img { display: block; max-width: 100%; }
 /* Desktop thesis positioning. */
 @media (min-width: 1101px) {
   .featured-project {
-    margin-left: 0;
-    transform: translateX(-100px);
+    width: calc(100% + 100px);
+    margin-left: -100px;
+    transform: none;
     gap: 10px;
   }
 
