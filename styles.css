@@ -819,6 +819,6 @@ img { display: block; max-width: 100%; }
 /* Align thesis date closer to the methods divider */
 @media (min-width: 1101px) {
   .featured-project-main > .project-meta {
-    width: calc(100% + 33px);
+    width: calc(100% + 60px);
   }
 }
