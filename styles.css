@@ -1063,3 +1063,29 @@ img { display: block; max-width: 100%; }
   border-bottom: none;
 }
 
+/* Place location directly beneath the portrait */
+.portrait-wrap {
+  flex-direction: column;
+}
+
+.portrait-location {
+  margin: 14px 0 0;
+  color: var(--quiet);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Underline academic links while preserving the existing glow */
+.introduction a.academic-link {
+  text-decoration-line: underline;
+  text-decoration-color: rgba(207, 116, 67, 0.65);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.introduction a.academic-link:hover,
+.introduction a.academic-link:focus-visible {
+  text-decoration-color: var(--orange-hover);
+}
