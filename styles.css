@@ -806,12 +806,17 @@ img { display: block; max-width: 100%; }
 
 /* Additional Works heading */
 #other-projects-heading {
-  color: var(--orange-hover);
+  display: inline-block;
+  color: #ff7a38 !important;
   font-family: "Lato", Arial, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 900;
-  letter-spacing: 0.03em;
+  font-size: 0.9rem;
+  font-weight: 900 !important;
+  letter-spacing: 0.035em;
+
   text-shadow:
-    0 0 8px rgba(207, 116, 67, 0.45),
-    0 0 18px rgba(207, 116, 67, 0.2);
+    0 0 3px rgba(255, 122, 56, 1),
+    0 0 9px rgba(255, 122, 56, 0.75),
+    0 0 20px rgba(255, 122, 56, 0.4);
+
+  filter: drop-shadow(0 0 5px rgba(255, 122, 56, 0.35));
 }
