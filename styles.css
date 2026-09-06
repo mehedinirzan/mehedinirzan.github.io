@@ -820,3 +820,10 @@ img { display: block; max-width: 100%; }
 
   filter: drop-shadow(0 0 5px rgba(255, 122, 56, 0.35));
 }
+
+/* Align thesis date closer to the methods divider */
+@media (min-width: 1101px) {
+  .featured-project-main > .project-meta {
+    width: calc(100% + 33px);
+  }
+}
