@@ -1121,3 +1121,76 @@ img { display: block; max-width: 100%; }
   text-decoration-color: var(--orange-hover);
   text-shadow: 0 0 12px rgba(207, 116, 67, 0.25);
 }
+
+/* =========================================
+   Achievements page
+   ========================================= */
+
+/* Keep the main heading left and achievements right */
+.achievements-head {
+  align-items: start;
+}
+
+/* Stack achievements vertically in the right column */
+.achievements-head .achievement-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+/* Individual achievement */
+.achievements-head .achievement-item {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 24px;
+  padding: 19px 0 21px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Achievement dates: neutral */
+.achievements-head .achievement-year {
+  color: var(--quiet);
+}
+
+/* Finalist, 1st Place, Selected Presenter and 1st Prize */
+.achievements-head .achievement-item h2 {
+  color: var(--orange-soft);
+  font-weight: 700;
+}
+
+/* Leadership section heading */
+.leadership-section #leadership-heading {
+  margin: 0 0 24px;
+  color: var(--orange-soft);
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Leadership dates: neutral */
+.leadership-section .leadership-item > span {
+  color: var(--quiet);
+}
+
+/* Leadership role names: orange */
+.leadership-section .leadership-item h3 {
+  color: var(--orange-soft);
+  font-weight: 700;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .achievements-head {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 520px) {
+  .achievements-head .achievement-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
