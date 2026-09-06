@@ -943,3 +943,97 @@ img { display: block; max-width: 100%; }
     gap: 0.2rem;
   }
 }
+
+/* =========================================
+   Experience page
+   ========================================= */
+
+.experience-head {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.86fr)
+    minmax(0, 1.14fr);
+  gap: 70px;
+  align-items: start !important;
+  padding-bottom: 42px;
+}
+
+.experience-title {
+  min-width: 0;
+  align-self: start;
+}
+
+.experience-summary {
+  min-width: 0;
+  border-top: 1px solid var(--line);
+}
+
+.experience-entry {
+  padding: 18px 0 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.experience-role {
+  margin: 0;
+  color: var(--blue);
+  font-size: 0.76rem;
+}
+
+.experience-entry time {
+  flex: none;
+  color: var(--orange-soft);
+  font-size: 0.74rem;
+}
+
+.experience-entry h2 {
+  margin: 5px 0 0;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.experience-link {
+  transition: color 160ms ease;
+}
+
+.experience-link:hover,
+.experience-link:focus-visible {
+  color: var(--orange-hover);
+}
+
+.experience-location {
+  margin: 5px 0 0;
+  color: var(--orange-soft);
+  font-size: 0.72rem;
+}
+
+.experience-description {
+  max-width: 620px;
+  margin: 8px 0 0;
+  color: var(--quiet);
+  font-size: 0.79rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .experience-head {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 620px) {
+  .experience-entry-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
