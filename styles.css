@@ -1217,3 +1217,32 @@ img { display: block; max-width: 100%; }
     position: static;
   }
 }
+
+/* Leadership organization hyperlinks */
+.leadership-org-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+/* Show underline only when hovered or keyboard-focused */
+.leadership-org-link:hover,
+.leadership-org-link:focus-visible {
+  color: var(--text);
+  text-decoration-color: var(--orange-soft);
+}
+
+/* Remove the line above Finalist */
+.achievements-head .achievement-grid {
+  border-top: none;
+}
+
+/* Remove the line below 1st Prize */
+.achievements-head .achievement-item:last-child {
+  border-bottom: none;
+}
