@@ -795,6 +795,6 @@ img { display: block; max-width: 100%; }
 /* Move only the featured thesis horizontally on desktop. */
 @media (min-width: 901px) {
   .featured-project {
-    margin-left: -110px;
+    margin-left: -100px;
   }
 }
