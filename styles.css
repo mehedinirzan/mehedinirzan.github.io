@@ -832,7 +832,7 @@ img { display: block; max-width: 100%; }
   }
 
   .featured-project-main > .project-meta > :last-child {
-    transform: translateX(13px);
+    transform: translateX(10px);
   }
 }
 
