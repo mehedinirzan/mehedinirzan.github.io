@@ -792,19 +792,16 @@ img { display: block; max-width: 100%; }
   }
 }
 
-/* Move only the featured thesis horizontally on desktop. */
-@media (min-width: 901px) {
-  .featured-project {
-    margin-left: -100px;
-  }
-}
+/* =========================================
+   Projects-page refinements
+   ========================================= */
 
-/* Move the Additional Works divider upward */
+/* Bring the divider below the featured thesis upward. */
 .projects-hero {
   padding-bottom: 0.5rem;
 }
 
-/* Additional Works heading */
+/* Orange, bold section heading without a glow. */
 #other-projects-heading {
   display: inline-block;
   color: var(--orange-hover) !important;
@@ -816,10 +813,11 @@ img { display: block; max-width: 100%; }
   filter: none !important;
 }
 
-
-/* Give the thesis description more horizontal space */
+/* Desktop thesis positioning. */
 @media (min-width: 1101px) {
   .featured-project {
+    margin-left: 0;
+    transform: translateX(-100px);
     gap: 10px;
   }
 
@@ -828,8 +826,25 @@ img { display: block; max-width: 100%; }
     max-width: none;
   }
 
-  /* Keep the date close to, but not touching, the divider */
   .featured-project-main > .project-meta {
-    width: calc(100% + 5.5px);
+    width: 100%;
+  }
+
+  .featured-project-main > .project-meta > :last-child {
+    transform: translateX(30px);
+  }
+}
+
+/* Prevent desktop offsets from affecting tablets and phones. */
+@media (max-width: 1100px) {
+  .featured-project {
+    margin-left: 0;
+    transform: none;
+  }
+
+  .featured-project-main > .project-meta,
+  .featured-project-main > .project-meta > :last-child {
+    width: auto;
+    transform: none;
   }
 }
